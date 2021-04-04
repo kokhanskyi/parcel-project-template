@@ -1,0 +1,221 @@
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 385px;
+  margin-top: 112px;
+  margin-bottom: 25px;
+  border-color: var(--background-color);
+}
+
+.footer-heading-made {
+  width: 232px;
+  height: 42px;
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+.footer-heading-feature {
+  width: 200px;
+  height: 76px;
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-top: 18px;
+}
+.footer-social-list {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 152px;
+  height: 32px;
+  top: 178px;
+  right: 20px;
+  &-item {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: #fea5bb;
+    border-radius: 50%;
+    transition: color 250ms linear, background-color 250ms linear;
+  }
+  &-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--primary-white-color);
+  }
+}
+
+.footer-social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: color 250ms linear, background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer-contact {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 230px;
+  height: 22px;
+  top: 256px;
+  right: 20px;
+  letter-spacing: normal;
+  text-decoration: none;
+}
+.footer-contact-tell {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.83;
+  color: var(--primary-black-color);
+}
+.footer-contact-tell-link {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.83;
+  color: var(--accent-color);
+}
+.footer-hr {
+  width: 100vw;
+  margin-left: -20px;
+  margin-bottom: 22px;
+  border-style: inset;
+}
+.footer-rights {
+  width: 150px;
+  height: 42px;
+  margin-left: 80px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    min-height: 336px;
+    margin-top: 158px;
+    margin-bottom: 18px;
+  }
+  .footer-heading-made {
+    margin-left: 2px;
+    width: 340px;
+    height: 58px;
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  .footer-heading-feature {
+    margin-left: 2px;
+    width: 340px;
+    height: 110px;
+    font-size: 48px;
+    letter-spacing: 0.06em;
+    margin-top: 16px;
+  }
+  .footer-social-list {
+    width: 162px;
+    height: 34px;
+    top: 0;
+    right: 36px;
+    &-item {
+      width: 34px;
+      height: 34px;
+    }
+  }
+  .footer-contact {
+    width: 268px;
+    height: 26px;
+    top: 80px;
+    right: 36px;
+  }
+  .footer-contact-tell {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  .footer-contact-tell-link {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  .footer-hr {
+    margin-left: -34px;
+    margin-bottom: 30px;
+  }
+  .footer-rights {
+    width: 276px;
+    height: 26px;
+    margin-left: 248px;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    padding: 0 154px;
+  }
+  .footer {
+    min-height: 248px;
+    margin-top: 165px;
+    margin-bottom: 10px;
+  }
+  .footer-heading-made {
+    width: 472px;
+    height: 34px;
+    font-size: 30px;
+  }
+  .footer-heading-feature {
+    width: 478px;
+    height: 66px;
+    font-size: 58px;
+    line-height: 1.14;
+    margin-top: 16px;
+  }
+  .footer-social-list {
+    width: 152px;
+    right: 161px;
+  }
+  .footer-contact {
+    width: 320px;
+    height: 30px;
+    top: 84px;
+    right: 156px;
+  }
+  .footer-contact-tell {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.02em;
+  }
+  .footer-contact-tell-link {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.02em;
+  }
+  .footer-hr {
+    margin-left: -154px;
+    margin-bottom: 35px;
+  }
+  .footer-rights {
+    margin-left: 348px;
+  }
+}
