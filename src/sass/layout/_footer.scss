@@ -1,0 +1,115 @@
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 385px;
+  margin-top: 112px;
+  margin-bottom: 25px;
+  border-color: var(--background-color);
+}
+
+.footer-heading-made {
+  width: 232px;
+  height: 42px;
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+.footer-heading-feature {
+  width: 200px;
+  height: 76px;
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-top: 18px;
+}
+.footer-social-list {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 152px;
+  height: 32px;
+  top: 178px;
+  right: 20px;
+  &-item {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: #fea5bb;
+    border-radius: 50%;
+    transition: color 250ms linear, background-color 250ms linear;
+  }
+  &-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--primary-white-color);
+  }
+}
+
+.footer-social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: color 250ms linear, background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer-contact {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 152px;
+  height: 32px;
+  top: 256px;
+  right: 20px;
+  width: 230px;
+  height: 22px;
+
+  letter-spacing: normal;
+  text-decoration: none;
+}
+.footer-contact-tell {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.83;
+  color: var(--primary-black-color);
+}
+.footer-contact-tell-link {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.83;
+  color: var(--accent-color);
+}
+.footer-hr {
+  margin: 0;
+  margin-bottom: 22px;
+  border-style: inset;
+}
+.footer-rights {
+  width: 150px;
+  height: 42px;
+  margin-left: 80px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
