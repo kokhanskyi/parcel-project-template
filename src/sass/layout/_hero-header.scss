@@ -1,6 +1,7 @@
 // Header
 
 .header {
+  position: absolute;
   background-color: #FFB8CA;
   padding-bottom: 28px;
   padding-top: 6px;
@@ -8,6 +9,16 @@
 
 .navigation .site-nav {
   display: none;
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus {
+  color: var(--accent-color);
+}
+
+.mobile-menu .site-nav-link:hover,
+.mobile-menu .site-nav-link:focus {
+  color: var(--accent-color);
 }
 
 .logo {
@@ -123,10 +134,13 @@
 
 // Hero
 .hero {
-    // background-color: #FFB8CA;
+    background-color: #FFB8CA;
     padding-top: 136px;
     padding-bottom: 160px;
+    margin: 0;
 }
+
+
 
 .hero-title {
     width: 218px;
@@ -158,6 +172,10 @@
 }
 
 @media (max-width: 767px) {
+
+  .header {
+    position: static;
+  }
   .navigation .mobile-menu-buy-btn {
     display: none;
   }
@@ -178,13 +196,13 @@
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px) and (max-width: 767px),
 screen and (min-resolution: 192dpi) and (min-width: 280px) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (min-width: 280px) and (max-width: 767px) {
-  .header {
+  .hero {
     background-image: url("../images/mobile/hero-header/m-hero@2x.png");
   }
 }
 
 @media screen and (min-width: 280px) and (max-width: 767px) {
-  .header {
+  .hero {
     background-image: url("../images/mobile/hero-header/m-hero.png");
     background-size: 284px 420px;
     background-repeat: no-repeat;
@@ -196,7 +214,7 @@ screen and (min-resolution: 2dppx) and (min-width: 280px) and (max-width: 767px)
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768) and (max-width: 1280px),
 screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1280px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1280px) {
-  .header {
+  .hero {
     background-image: url("../images/tablet/hero-header/tablet-hero-milk@2x.png"),
                       url("../images/tablet/hero-header/tablet-hero-girl@2x.png"),
                       url("../images/tablet/hero-header/tablet-hero@2x.png");
@@ -204,7 +222,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1280px
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
-  .header {
+  .hero {
     background-image: url("../images/tablet/hero-header/tablet-hero-milk.png"),
                       url("../images/tablet/hero-header/tablet-hero-girl.png"),
                       url("../images/tablet/hero-header/tablet-hero.png");
@@ -232,13 +250,17 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1280px
   }
 
   .header {
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+    background-color: transparent;
     padding-top: 38px;
     padding-bottom: 0;
   }
 
   .hero {
-    padding-top: 0;
-    padding-bottom: 60px;
+    padding-top: 102px;
+    padding-bottom: 34px;
   }
 
   .hero-title {
@@ -266,8 +288,8 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1280px
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 89%;
-    top: 20%;
+    left: 86%;
+    top: 16%;
   }
 
   .text-number {
@@ -326,6 +348,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1280px
     font-weight: 400;
     font-size: 8px;
     line-height: 1.5;
+    letter-spacing: 0.03em;
     color: var(--primary-white-color);
     
   }
@@ -344,7 +367,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1280px
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
 screen and (min-resolution: 192dpi) and (min-width: 1280px),
 screen and (min-resolution: 2dppx) and (min-width: 1280px) {
-  .header {
+  .hero {
     background-image: url("../images/desktop/hero-header/desk-hero-milk@2x.png"),
       url("../images/desktop/hero-header/desk-hero-girl@2x.png"),
       url("../images/desktop/hero-header/desk-hero@2x.png");
@@ -352,24 +375,32 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
 }
 
 @media screen and (min-width: 1280px) {
-  .header {
+  .hero {
     background-image: url("../images/desktop/hero-header/desk-hero-milk.png"),
       url("../images/desktop/hero-header/desk-hero-girl.png"),
       url("../images/desktop/hero-header/desk-hero.png");
     background-size: 188px 191px, 293px 232px, 538px 613px;
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 16% 90%, 88% 100%, 63% 140%;
+    background-position: 12% 90%, 88% 100%, 63% 100%;
 
+
+  }
+
+  .header {
+    left: 50%;
+    margin-left: -630px;
+    background-color: transparent;
     padding-top: 38px;
     padding-bottom: 0;
   }
 
   .hero {
-    padding-top: 84px;
+    padding-top: 171px;
     padding-bottom: 56px;
+    padding-left: 0;
   }
 
-  .container {
+  .header-container {
     padding-right: 115px;
   }
 
@@ -383,7 +414,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.31;
     align-items: center;
-    margin-top: 12px;
     color: var(--primary-white-color);
     
   }
@@ -408,7 +438,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
   .hero-title {
     width: 277px;
     margin-bottom: 25px;
-    margin-left: 68px;
+    margin-left: 30px;
     font-size: 38px;
     line-height: 1.15;
   }
@@ -427,7 +457,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
   }
 
   .hero-container .secondary-btn {
-    margin-left: 68px;
+    margin-left: 30px;
     width: 104px;
     height: 40px;
     font-weight: 400;
