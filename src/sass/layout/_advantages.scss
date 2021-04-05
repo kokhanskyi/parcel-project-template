@@ -1,0 +1,125 @@
+.advantages {
+  padding-top: 39px;
+  padding-bottom: 97px;
+  background-color: var(--background-color);
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-number {
+  font-family: Titan One;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 34px;
+}
+
+.advantages-description {
+  width: 230px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--primary-black-color);
+  width: 230px;
+}
+
+.advantages-items {
+  position: relative;
+  padding-top: 66px;
+}
+
+.advantages-items:not(:last-child) {
+  margin-bottom: 38px;
+}
+
+.advantages-items:nth-child(1)::before {
+  content: '';
+  display: block;
+  background-image: url('../../src/images/desktop/about/desk-milk.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 33px;
+  height: 50px;
+  top: 0;
+
+  position: absolute;
+}
+
+.advantages-items:nth-child(2)::before {
+  content: '';
+  display: block;
+  background-image: url('../../src/images/desktop/about/desk-apple.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  top: 0;
+
+  position: absolute;
+}
+
+.advantages-items:nth-child(3)::before {
+  content: '';
+  display: block;
+  background-image: url('../../src/images/desktop/about/desk-heart.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 44px;
+  height: 50px;
+  top: 0;
+
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  .advantages-items {
+    padding-top: 86px;
+  }
+
+  .advantages-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .advantages-items:not(:last-child) {
+    margin-right: 60px;
+    margin-bottom: 0;
+  }
+
+  .advantages-number {
+    font-size: 48px;
+    line-height: 1.14;
+  }
+
+  .advantages-description {
+    font-size: 14px;
+    line-height: 1.71;
+    width: 180px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .advantages-items {
+    padding-top: 90px;
+  }
+
+  .advantages-items:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .advantages-number {
+    font-size: 58px;
+  }
+
+  .advantages-description {
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+    width: 330px;
+  }
+}
