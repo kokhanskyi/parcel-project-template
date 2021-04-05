@@ -5,17 +5,17 @@
   padding: 50px 0px;
   background-color: var(--background-color);
   background-image: url('../../src/images/desktop/about/desk-about-bg.png');
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 
 }
 .about-title-additional{
   font-family: 'Titan One';
   text-transform: uppercase;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1em;
   color: var(--secondary-accent);
-  padding: 15px 0px;
+  padding-bottom: 15px;
   display: flex;
   justify-content: center;
 }
@@ -23,7 +23,7 @@
   font-family: 'Titan One';
   text-transform: uppercase;
   font-size: 34px;
-  line-height: 29px;
+  line-height: 1.381em;
   letter-spacing: 0.04em;
   color: var(--accent-color);
   padding-bottom: 26px;
@@ -33,7 +33,7 @@
   text-align: center;
 }
 .about-contant-container{
-  padding: 30px 0px;
+  padding: 30px;
 }
 .about-content-image{
   width: 90%;
@@ -111,6 +111,7 @@
     width: 768px;
     padding: 0 34px;
   }
+
   .about-contant-container {
     display: flex;
 
