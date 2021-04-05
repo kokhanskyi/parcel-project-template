@@ -1,4 +1,365 @@
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.button-products {
+  border-radius: 50%;
+  border: 0;
+  background-color: transparent;
+}
+
+.button-products:hover {
+  cursor: pointer;
+}
+
+.products-item-cream {
+  border-radius: 24px;
+  background-color: #ffb8ca;
+  width: 210px;
+  width: 100%;
+  margin-bottom: 130px;
+  position: relative;
+}
+
+.products-cream {
+  padding-top: 175px;
+}
+
+.main-title {
+  margin-top: 15px;
+  margin-bottom: 144px;
+}
+
+.products {
+  padding-top: 121px;
+}
+
+.products-label {
+  display: block;
+  color: #ffa5ba;
+  font-family: Titan One;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+}
+
+.main-title {
+  color: var(--accent-color);
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.products-list h3 {
+  color: var(--primary-white-color);
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.products-item-cream:before {
+  content: '';
+  display: block;
+  position: fixed;
+  background-image: url('../../src/images/mobile/advantages/m-prod-icecream.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 249px;
+  height: 252px;
+
+  margin: 0 auto;
+
+  position: absolute;
+  bottom: 346px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.products-list h3:after {
+  content: '';
+  display: block;
+  background-image: url('../../src/images/group.svg');
+  width: 26px;
+  height: 6px;
+  margin: 30px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.products-item-coffee {
+  border-radius: 24px;
+  background-color: var(--background-yellow);
+  width: 210px;
+  width: 100%;
+  margin-bottom: 130px;
+  position: relative;
+}
+
+.products-item-coffee:before {
+  content: '';
+  display: block;
+  position: fixed;
+  background-image: url('../../src/images/mobile/advantages/m-prod-coffee.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 249px;
+  height: 252px;
+
+  margin: 0 auto;
+
+  position: absolute;
+  bottom: 346px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.products-item-milkshakes {
+  border-radius: 24px;
+  background-color: var(--background-green);
+  width: 210px;
+  width: 100%;
+  margin-bottom: 130px;
+  position: relative;
+}
+
+.products-item-milkshakes:before {
+  content: '';
+  display: block;
+  position: fixed;
+  background-image: url('../../src/images/mobile/advantages/m-prod-shake.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 249px;
+  height: 252px;
+
+  margin: 0 auto;
+
+  position: absolute;
+  bottom: 346px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .products-arrow {
   width: 40px;
   height: 40px;
+}
+
+.products-list > li {
+  padding-top: 161px;
+  padding-bottom: 41px;
+  height: 485px;
+}
+
+.produc-item {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.products-link {
+  display: flex;
+  justify-content: center;
+}
+
+.products-description {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  color: var(--primary-white-color);
+  max-width: 200px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+@media (min-width: 480px) {
+  .products-list > li {
+    width: 280px;
+  }
+
+  .products-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .products-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .description-text {
+    display: none;
+  }
+
+  .products-list > li {
+    padding-top: 161px;
+    padding-bottom: 41px;
+    width: 220px;
+    height: 485px;
+  }
+
+  .description-container {
+    max-height: 124px;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+
+  .main-title {
+    margin-bottom: 150px;
+  }
+
+  .products-item-cream:before {
+    background-image: url('../../src/images/tablet/advantages/tablet-prod-icecream.png');
+    width: 220px;
+    height: 233px;
+    bottom: 363px;
+  }
+
+  .products-item-coffee:before {
+    background-image: url('../../src/images/tablet/advantages/tablet-prod-coffee.png');
+    width: 220px;
+    height: 233px;
+    bottom: 363px;
+  }
+
+  .products-item-milkshakes:before {
+    background-image: url('../../src/images/tablet/advantages/tablet-prod-shake.png');
+    width: 220px;
+    height: 233px;
+    bottom: 363px;
+  }
+
+  .products-list > li {
+    padding-top: 152px;
+  }
+
+  .products-list > li:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .products-label {
+    font-size: 26px;
+    line-height: 1.15;
+    text-transform: uppercase;
+  }
+
+  .main-title {
+    font-size: 48px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .products-description {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.78;
+    max-width: 198px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  container {
+    width: 1280px;
+    padding: 0 154px;
+  }
+
+  .products-list > li {
+    padding-top: 163px;
+    padding-bottom: 50px;
+    width: 330px;
+    height: 525px;
+  }
+
+  .main-title {
+    margin-bottom: 259px;
+  }
+
+  .products-item-cream:before {
+    background-image: url('../../src/images/desktop/advantages/desk-prod-icecream.png');
+    width: 335px;
+    height: 335px;
+    top: -210px;
+  }
+
+  .products-item-coffee:before {
+    background-image: url('../../src/images/desktop/advantages/desk-prod-coffee.png');
+    width: 335px;
+    height: 335px;
+    top: -210px;
+  }
+
+  .products-item-milkshakes:before {
+    background-image: url('../../src/images/desktop/advantages/desk-prod-shake.png');
+    width: 335px;
+    height: 335px;
+    top: -210px;
+  }
+  .products-title-cream:after {
+    margin: 32px auto;
+  }
+
+  .products-title-coffee:after {
+    margin: 32px auto;
+  }
+
+  .products-title-milkshakes:after {
+    margin: 32px auto;
+  }
+
+  .products-description {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 50px;
+    max-width: 241px;
+  }
+
+  .products-list > li {
+    padding-top: 161px;
+    padding-bottom: 50px;
+  }
+
+  .products-label {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
+
+  .products-list h3 {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
+
+  .main-title {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
 }
