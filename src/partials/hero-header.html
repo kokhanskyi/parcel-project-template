@@ -1,1 +1,108 @@
-<h2>Hero header</h2>
+<!-- Header -->
+<header class="header" name="home">
+    <div class="container header-container">
+        <nav class="navigation">
+            <a href="./index.html"  class="logo-link">
+                <picture>
+                    <source
+                        srcset="./images/tablet/hero-header/tablet-hero-logo.webp 1x, ./images/tablet/hero-header/tablet-hero-logo@2x.webp 2x"
+                        media="(min-width: 280px)" type="image/webp">
+                    <source
+                        srcset="./images/tablet/hero-header/tablet-hero-logo.png 1x, ./images/tablet/hero-header/tablet-hero-logo@2x.png 2x"
+                        media="(min-width: 280px)">
+                    <img class="logo" src="./images/tablet/hero-header/tablet-hero-logo.png"
+                        alt="Logo" />
+                </picture>
+            </a>
+            <ul class="site-nav">
+                <li class="site-nave-item">
+                    <a href="#home" class="site-nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="site-nave-item">
+                    <a href="#about" class="site-nav-link">
+                        About us
+                    </a>
+                </li>
+                <li class="site-nave-item">
+                    <a href="#made" class="site-nav-link">
+                        How it's made?
+                    </a>
+                </li>
+                <li class="site-nave-item">
+                    <a href="#products" class="site-nav-link">
+                        Our products
+                    </a>
+                </li>
+                <li class="site-nave-item">
+                    <a href="#contacts" class="site-nav-link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+            <button type="button" class="mobile-open-btn" data-menu-button>
+            <svg class="mobile-open-icon">
+                <use href="./images/sprite.svg#icon-burger-menu"></use>
+            </svg>
+            </button>
+            <button type="button" class="mobile-menu-buy-btn primary-btn">
+                Buy now
+                <svg class="right-arrow-icon">
+                    <use href="./images/sprite.svg#icon-right-arrow"></use>
+                </svg>
+            </button>
+        </nav>
+        
+    </div>
+    <div class="mobile-menu" data-menu>
+        <button type="button" class="mobile-menu-close-btn" data-menu-close>
+            <svg class="mobile-menu-close-icon">
+                <use href="./images/sprite.svg#icon-cancel"></use>
+            </svg>
+        </button>
+        <button type="button" class="mobile-menu-buy-btn primary-btn">
+            Buy now
+            <svg class="right-arrow-icon">
+                <use href="./images/sprite.svg#icon-right-arrow"></use>
+            </svg>
+        </button>
+        <ul class="site-nav">
+            <li class="site-nav-item"><a href="#home" class="site-nav-link">Home</a></li>
+            <li class="site-nav-item"><a href="#about" class="site-nav-link">About us</a></li>
+            <li class="site-nav-item"><a href="#made" class="site-nav-link">How it's made?</a></li>
+            <li class="site-nav-item"><a href="#products" class="site-nav-link">Our products</a></li>
+            <li class="site-nav-item"><a href="#contacts" class="site-nav-link">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class=" hero hero-container">
+    <div class="container box">
+        <h1 class="hero-title">Ice cream made with <span class="hero-title-span">passion</span></h1>
+        <button type="button" class="secondary-btn">Products</button>
+        <button type="button" class="primary-btn">How it's made</button>
+        <p class="hero-text-milk">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        </p>
+        <a href="" class="red-arrow-link" >
+            <img class="red-arrow" src="./images/tablet/hero-header/m-arrow.png" alt="Arrow">
+        </a>
+        <ul class="hero-text">
+            <li class="hero-text-item">
+                <p class="text-number text-number-one">
+                    <span class="text-number-span">16</span> 
+                    cafes
+                </p>
+            </li>
+            <li class="hero-text-item">
+                <p class="text-number text-number-two">
+                    <span class="text-number-span">23</span>
+                    food trucks
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+
