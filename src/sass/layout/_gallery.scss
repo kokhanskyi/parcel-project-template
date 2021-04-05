@@ -1,3 +1,26 @@
 .gallery {
   background: linear-gradient(to top, #ffffff 60%, #fff5f6 60%);
 }
+
+.gallery-image.tablet-gallery,
+.gallery-image.desktop-gallery {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-image.mobile-gallery {
+    display: none;
+  }
+  .gallery-image.tablet-gallery {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery-image.desktop-gallery {
+    display: inline;
+  }
+  .gallery-image.tablet-gallery {
+    display: none;
+  }
+}
