@@ -66,13 +66,14 @@
 
   .mobile-menu.is-open {
     opacity: 1;
+    overflow: scroll;
     visibility: visible;
     pointer-events: auto;
   }
 
   .mobile-menu-close-btn {
     position: relative;
-    margin-bottom: 22px;
+    margin-bottom: 36px;
     margin-left: auto;
     width: 40px;
     height: 40px;
