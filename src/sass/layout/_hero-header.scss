@@ -29,8 +29,8 @@
 .mobile-open-btn {
   position: absolute;
   padding: 0;
-  top: 25px;
-  right: 20px;
+  top: 18px;
+  right: 18px;
   background-color: transparent;
   border: none;
 }
@@ -150,7 +150,7 @@
 .hero {
   background-color: #ffb8ca;
   padding-top: 136px;
-  padding-bottom: 160px;
+  padding-bottom: 166px;
   margin: 0;
 }
 
@@ -180,6 +180,7 @@
 }
 
 .hero-container .primary-btn {
+  font-size: 8px;
   padding: 8px 16px;
 }
 
@@ -240,6 +241,9 @@
     background-size: 346px 384px;
     background-repeat: no-repeat;
     background-position: 68% 100%;
+
+      padding-top: 102px;
+      padding-bottom: 0;
   }
 
   .box {
@@ -249,6 +253,12 @@
     background-repeat: no-repeat, no-repeat;
     background-position: 6% 90%, 94% 100%;
     position: relative;
+
+    
+  }
+
+  .hero-container .container {
+    padding-bottom: 34px;
   }
 
   .logo {
@@ -276,10 +286,7 @@
     padding-bottom: 0;
   }
 
-  .hero {
-    padding-top: 102px;
-    padding-bottom: 0;
-  }
+
 
   .hero-title {
     width: 162px;
@@ -360,7 +367,7 @@
 
   .hero-text-list {
     margin-left: 120px;
-    margin-top: 66px;
+    margin-top: 72px;
   }
 
   .hero-text-milk {
@@ -415,6 +422,10 @@
     background-position: 2% 90%, 88% 100%;
     padding-bottom: 56px;
     position: relative;
+  }
+
+  .hero-container .container {
+    padding-bottom: 56px;
   }
 
   .header {
