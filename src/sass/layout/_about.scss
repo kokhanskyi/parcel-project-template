@@ -2,12 +2,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 50px 0px;
   background-color: var(--background-color);
   background-image: url('../../src/images/desktop/about/desk-about-bg.png');
   background-repeat: no-repeat;
   background-size: 100% auto;
-
+  padding-top: 127px;
 }
 .about-title-additional{
   font-family: 'Titan One';
@@ -33,7 +32,7 @@
   text-align: center;
 }
 .about-contant-container{
-  padding: 30px;
+  margin: 21px;
 }
 .about-content-image{
   width: 100%;
@@ -42,20 +41,22 @@
 .about-section{
   background-image: url('../../src/images/mobile/about/desk-about-bg.svg');
   background-repeat: no-repeat;
-  background-position-y: 673px;
+  background-position-y: 698px;
   background-size: 100% auto;
   // padding: 30px;
 }
-.about-list-item{
-
+.about-content-list{
+  margin: 0 10px;
+}
+.about-content-list-item{
+  margin-bottom: 30px;
 }
 .about-description-primary{
   font-family: 'DM Sans';
   display: flex;
   line-height: 162%;
   color: var(--primary-black-color);
-  // padding: 5px 35px;
-  padding-bottom: 15px;
+
 }
 .about-description-secondary{
   font-family: 'DM Sans';
@@ -69,8 +70,7 @@
   font-family: 'DM Sans';
   display: flex;
   line-height: 162%;
-  // padding: 5px 35px 50px 35px;
-  padding: 15px 0px;
+
 
 }
 
@@ -111,7 +111,9 @@
     width: 768px;
     padding: 0 34px;
   }
-
+  .about-section{
+    background-image:none;
+  }
   .about-contant-container {
     display: flex;
 
@@ -121,19 +123,22 @@
     height: 45%;
   }
   .about-content-list{
-    padding: 50px 20px;
+    margin: 50px 20px;
     background-image: none;
     width: 50%;
   }
   .about-content-list-item{
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
   .about-content-list-button{
     padding-top: 50px;
   }
-  .about-description-secondary {
+  // .about-description-secondary {
 
-  }
+  // }
+  // .about-description-additional{
+  //   margin-bottom: 20px;
+  // }
   .about-btn{
     margin: 0px;
   }
@@ -147,13 +152,13 @@
     background-image: url('../../src/images/desktop/about/desk-about-bg.png');
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-position-y: 184px;
+    background-position-y: 336px;
   }
   .about-contant-container {
     display: flex;
   }
   .about-content-list{
-    padding: 60px 117px 0px 74px;
+    margin: 60px 60px 0px 74px;
   }
   .about-title-additional{
     font-size: 30px;
@@ -165,11 +170,6 @@
     font-size: 58px;
   }
   .about-description-primary{
-    padding-bottom: 35px;
-    font-size: 16px;
-  }
-  .about-description-additional{
-    padding: 40px 0px;
     font-size: 16px;
   }
 }
