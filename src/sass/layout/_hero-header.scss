@@ -61,43 +61,32 @@
   visibility: hidden;
   pointer-events: none;
 }
-
-<<<<<<< Updated upstream
-  .mobile-menu.is-open {
-    opacity: 1;
-    overflow: scroll;
-    visibility: visible;
-    pointer-events: auto;
-  }
-
-  .mobile-menu-close-btn {
-    position: relative;
-    margin-bottom: 36px;
-    margin-left: auto;
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 50%;
-    background-color: transparent;
-
-  }
-
-   .mobile-menu-buy-btn {
-    width: 210px;
-    height: 44px;
-    padding: 0 30px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    
-  }
-=======
 .mobile-menu.is-open {
   opacity: 1;
+  overflow: scroll;
   visibility: visible;
   pointer-events: auto;
 }
->>>>>>> Stashed changes
+
+.mobile-menu-close-btn {
+  position: relative;
+  margin-bottom: 36px;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.mobile-menu-buy-btn {
+  width: 210px;
+  height: 44px;
+  padding: 0 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+}
 
 .mobile-menu-close-btn {
   position: relative;
