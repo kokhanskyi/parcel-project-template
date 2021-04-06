@@ -1,5 +1,14 @@
 .footer-background {
+  position: relative;
   background-color: var(--background-color);
+}
+.footer-background::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #e1e1e1;
+  position: absolute;
+  bottom: 89px;
 }
 .footer {
   position: relative;
@@ -97,11 +106,7 @@
   line-height: 1.83;
   color: var(--accent-color);
 }
-.footer-hr {
-  width: 100%;
-  margin-bottom: 22px;
-  border-style: inset;
-}
+
 .footer-rights {
   width: 150px;
   height: 42px;
@@ -118,6 +123,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .footer-background::after {
+    bottom: 73px;
+  }
   .footer {
     min-height: 512px;
     padding-top: 158px;
@@ -162,9 +170,7 @@
     font-size: 14px;
     line-height: 1.86;
   }
-  .footer-hr {
-    margin-bottom: 30px;
-  }
+
   .footer-rights {
     width: 276px;
     height: 26px;
@@ -175,6 +181,9 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  .footer-background::after {
+    bottom: 45px;
+  }
   .footer {
     padding: 0 154px;
     min-height: 423px;
@@ -214,9 +223,7 @@
     line-height: 1.88;
     letter-spacing: 0.02em;
   }
-  .footer-hr {
-    margin-bottom: 10px;
-  }
+
   .footer-rights {
     margin-left: 348px;
   }

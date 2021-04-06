@@ -217,6 +217,8 @@
   .contacts-section-background {
     background-image: url(../images/desktop/contacts/sectionbg2-1.png),
       linear-gradient(to bottom, var(--primary-white-color) 234px, var(--background-color) 234px);
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .contacts-section {
     padding: 0 154px;
