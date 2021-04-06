@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IceCream</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src.e31bb0bc.css"></head>
+  <body>
+    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+    <!-- Header -->
+<header class="header" id="home">
+    <div class="container header-container">
+        <nav class="navigation">
+            <a href="/index.html" class="logo-link">
+                <picture>
+                    <source srcset="/tablet-hero-logo.d4e3156d.webp 1x,/tablet-hero-logo@2x.4721c04a.webp 2x" media="(min-width: 280px)" type="image/webp">
+                    <source srcset="/tablet-hero-logo.d3b86916.png 1x,/tablet-hero-logo@2x.6d880f07.png 2x" media="(min-width: 280px)">
+                    <img class="logo" src="/tablet-hero-logo.d3b86916.png" alt="Logo">
+                </picture>
+            </a>
+            <ul class="site-nav">
+                <li class="site-nave-item">
+                    <a href="#home" class="site-nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="site-nave-item">
+                    <a href="#about" class="site-nav-link">
+                        About us
+                    </a>
+                </li>
+                <li class="site-nave-item">
+                    <a href="#made" class="site-nav-link">
+                        How it's made?
+                    </a>
+                </li>
+                <li class="site-nave-item">
+                    <a href="#products" class="site-nav-link">
+                        Our products
+                    </a>
+                </li>
+                <li class="site-nave-item">
+                    <a href="#contacts" class="site-nav-link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+            <button type="button" class="mobile-open-btn" data-menu-button="">
+            <svg class="mobile-open-icon">
+                <use href="/sprite.5ec50489.svg#icon-burger-menu"></use>
+            </svg>
+            </button>
+            <button type="button" class="mobile-menu-buy-btn primary-btn">
+                Buy now
+                <svg class="right-arrow-icon">
+                    <use href="/sprite.5ec50489.svg#icon-right-arrow"></use>
+                </svg>
+            </button>
+        </nav>
+        
+    </div>
+    <div class="mobile-menu" data-menu="">
+        <button type="button" class="mobile-menu-close-btn" data-menu-close="">
+            <svg class="mobile-menu-close-icon">
+                <use href="/sprite.5ec50489.svg#icon-cancel"></use>
+            </svg>
+        </button>
+        <button type="button" class="mobile-menu-buy-btn primary-btn">
+            Buy now
+            <svg class="right-arrow-icon">
+                <use href="/sprite.5ec50489.svg#icon-right-arrow"></use>
+            </svg>
+        </button>
+        <ul class="site-nav">
+            <li class="site-nav-item"><a href="#home" class="site-nav-link">Home</a></li>
+            <li class="site-nav-item"><a href="#about" class="site-nav-link">About us</a></li>
+            <li class="site-nav-item"><a href="#made" class="site-nav-link">How it's made?</a></li>
+            <li class="site-nav-item"><a href="#products" class="site-nav-link">Our products</a></li>
+            <li class="site-nav-item"><a href="#contacts" class="site-nav-link">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class=" hero hero-container">
+    <div class="container box">
+        <h1 class="hero-title">Ice cream made with <span class="hero-title-span">passion</span></h1>
+        <a href="#products" class="secondary-btn">Products</a>
+        <a href="#made" class="primary-btn">How it's made</a>
+        <ul class="hero-text-list">
+            <li class="hero-text-milk-item">
+                <p class="hero-text-milk">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                </p>
+            </li>
+            <li class="hero-text-milk-item">
+                <a href="" class="red-arrow-link">
+                    <img class="red-arrow" src="/m-arrow.4bf1c1ff.png" alt="Arrow">
+                </a>
+            </li>
+        </ul>
+        <ul class="hero-text">
+            <li class="hero-text-item">
+                <p class="text-number text-number-one">
+                    <span class="text-number-span">16</span> 
+                    cafes
+                </p>
+            </li>
+            <li class="hero-text-item">
+                <p class="text-number text-number-two">
+                    <span class="text-number-span">23</span>
+                    food trucks
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+    <section class="products" id="products">
+  <div class="container">
+    <label class="products-label">
+      100% Natural
+      <h2 class="main-title">Products</h2>
+    </label>
+
+    <ul class="products-list">
+      <li class="products-item-cream">
+        <h3 class="products-title-cream">ICE CREAM</h3>
+        <p class="products-description">
+          Lorem ipsum dolor sit amet, consectet ur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et<span class="description-text">. dolore magna aliqua facilisis.</span>
+        </p>
+        <button type="button" class="button-products">
+          <img class="products-arrow" src="/m-arrow-point@1x.85815a56.png" alt="Описание товара" width="40" height="40">
+        </button>
+      </li>
+      <li class="products-item-coffee">
+        <h3 class="products-title-coffee">ICE COFFEE</h3>
+        <p class="products-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et<span class="description-text">. dolore magna aliqua facilisis.</span>
+        </p>
+        <button type="button" class="button-products">
+          <img class="products-arrow" src="/m-arrow-point@1x.85815a56.png" alt="Описание товара" width="40" height="40">
+        </button>
+      </li>
+      <li class="products-item-milkshakes">
+        <h3 class="products-title-milkshakes">MILKSHAKES</h3>
+        <p class="products-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et<span class="description-text">. dolore magna aliqua facilisis.</span>
+        </p>
+        <button type="button" class="button-products">
+          <img class="products-arrow" src="/m-arrow-point@1x.85815a56.png" alt="Описание товара" width="40" height="40">
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section id="about" class="about-section">
+  <div class="container">
+    <h2 class="about-title-additional">tradition and love</h2>
+    <h2 class="about-title-primary">how it's made?</h2>
+    <div class="about-contant-container">
+      <picture>
+        <source srcset="/m-about-cow.4fe9003c.webp 1x,/tablet-about-cow@2x.c51b6fde.webp 2x" type="image/webp">
+      </picture>
+      <img class="about-content-image" srcset="/tablet-about-cow.117a4952.png 1x,/m-about-cow@2x.ae35191b.png 2x" alt="cow_picture">
+      <ul class="about-content-list">
+        <li class="about-content-list-item">
+          <p class="about-description-primary">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
+        </li>
+        <li class="about-content-list-item">
+          <p class="about-description-secondary">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+        </p></li>
+        <li class="about-content-list-item">
+          <p class="about-description-additional">Aliquam erat volutpat. Aenean accumsan.</p>
+        </li>
+        <button class="primary-btn about-btn">Read more
+          <svg class="btn-icon" height="10" width="10">
+            <use href="/sprite.5ec50489.svg#icon-right-arrow"></use>
+          </svg>
+        </button>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+    <section class="advantages">
+  <div class="container">
+    <h2 class="visually-hidden">Технология производства</h2>
+    <ul class="advantages-list">
+      <li class="advantages-items">
+        <p class="advantages-number">721</p>
+        <p class="advantages-description">
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </li>
+      <li class="advantages-items">
+        <p class="advantages-number">16KG</p>
+        <p class="advantages-description">
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </li>
+      <li class="advantages-items">
+        <p class="advantages-number">84</p>
+        <p class="advantages-description">
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="gallery">
+    <div class="container gallery-container">
+        <picture class="gallery-image mobile-gallery">
+            <source srcset="/m-about-gallery.4717fc86.png 1x,/m-about-gallery@2x.399801a1.png 2x" type="image" media="(min-width: 600px)">
+            <img src="/m-about-gallery.4717fc86.png" alt="Gallery">
+        </picture>
+        <picture class="gallery-image tablet-gallery">
+            <source srcset="/tablet-about-gallery.de36775b.png 1x,/tablet-about-gallery@2x.faf7d32e.png 2x" type="image" media="">
+            <img src="/tablet-about-gallery.de36775b.png" alt="Gallery">
+        </picture>
+        <picture class="gallery-image desktop-gallery">
+            <source srcset="/desk-about-gallery.1ac80a77.png 1x,/desk-about-gallery@2x.3be947ac.png 2x" type="image" media="">
+            <img src="/desk-about-gallery.1ac80a77.png" alt="Gallery">
+        </picture>
+    </div>
+</section>
+
+    <section class="customer">
+    <div class="container">
+        <picture class="customer-image desktop-face">
+            <source srcset="/desk-comment-1.99121bcc.png 1x,/desk-comment-1@2x.5cb00620.png 2x" type="image" media="">
+            <img src="/desk-comment-1.99121bcc.png" alt="Girl" width="85">
+        </picture>
+        <picture class="customer-image tablet-face">
+            <source srcset="/tablet-comment-1.2c205a69.png 1x,/tablet-comment-1@2x.1c6cb676.png 2x" type="image" mediamobile="">
+            <img src="/tablet-comment-1.2c205a69.png" alt="Girl" width="85">
+        </picture>
+        <picture class="customer-image mobile-face">
+            <s srcset="./images/mobile/customer-reviews/m-comment-1.png 1x, ./images/mobile/customer-reviews/m-comment-1@2x.png 2x" type="image" media="">
+            <img src="/m-comment-1.15fd6943.png" alt="Girl" width="85">
+        </s></picture>
+        <div class="customer-box">
+            <svg class="customer-quotes">
+                <use href="/sprite.5ec50489.svg#icon-quotes"></use>
+            </svg>
+            <p class="customer-text">
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
+                congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+        </div>
+        <ul class="customer-point">
+            <li class="customer-point-list">
+                <svg class="customer-icon-point">
+                    <use href="/sprite.5ec50489.svg#icon-home-point"></use>
+                </svg>
+            </li>
+            <li class="customer-point-list">
+                <svg class="customer-icon-point">
+                    <use href="/sprite.5ec50489.svg#icon-home-point"></use>
+                </svg>
+            </li>
+            <li class="customer-point-list">
+                <svg class="customer-icon-point">
+                    <use href="/sprite.5ec50489.svg#icon-home-point"></use>
+                </svg>
+            </li>
+        </ul>
+        <p class="customer-name">Emily, Los Angeles</p>
+        <ul class="customer-home">
+            <li class="customer-home-list">
+                <svg class="customer-icon-home home-one">
+                    <use href="/sprite.5ec50489.svg#icon-home1"></use>
+                </svg>
+            </li>
+            <li class="customer-home-list">
+                <svg class="customer-icon-home">
+                    <use href="/sprite.5ec50489.svg#icon-home-point"></use>
+                </svg>
+            </li>
+            <li class="customer-home-list">
+                <svg class="customer-icon-home">
+                    <use href="/sprite.5ec50489.svg#icon-home-point"></use>
+                </svg>
+            </li>
+        </ul>
+
+    </div>
+</section>
+    <div id="contacts" class="contacts-section-background">
+<section class="contacts-section container">
+    <h2 class="visually-hidden">Contacts</h2>
+<ul class="contacts-section-list">
+    <li class="contacts-section-item">
+        <p class="contacts-section-cafe">CAFE</p>
+        <p class="contacts-section-city">Chicago</p>
+        <p class="contacts-section-about">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+        <hr class="contacts-section-hr">
+        <p class="contacts-section-working-days">Monday - Friday</p>
+        <p class="contacts-section-working-days-time">06:00 AM - 10:00 PM</p>
+        <p class="contacts-section-working-days">Saturday - Sunday</p>
+        <p class="contacts-section-working-days-time">08:00 AM - 16:00 PM</p>
+        <hr class="contacts-section-hr">
+        <a href="tel:+610383766284" class="contacts-section-link">+61(0) 383 766 284</a>
+        <a href="mailto:noreply@envato.com" class="contacts-section-link">noreply@envato.com</a>
+    </li>
+    <li class="contacts-section-item">
+        <p class="contacts-section-foodtruck">FOODTRUCK</p>
+        <p class="contacts-section-city">Los Angeles</p>
+        <p class="contacts-section-about">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+        <hr class="contacts-section-hr">
+        <p class="contacts-section-working-days">Monday - Friday</p>
+        <p class="contacts-section-working-days-time">06:00 AM - 10:00 PM</p>
+        <p class="contacts-section-working-days">Saturday - Sunday</p>
+        <p class="contacts-section-working-days-time">08:00 AM - 16:00 PM</p>
+        <hr class="contacts-section-hr">
+        <a href="tel:+610383766284" class="contacts-section-link">+61(0) 383 766 284</a>
+        <a href="mailto:noreply@envato.com" class="contacts-section-link">noreply@envato.com</a>
+    </li>
+    <li class="contacts-section-item">
+        <p class="contacts-section-cafe">CAFE</p>
+        <p class="contacts-section-city">New York</p>
+        <p class="contacts-section-about">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+        <hr class="contacts-section-hr">
+        <p class="contacts-section-working-days">Monday - Friday</p>
+        <p class="contacts-section-working-days-time">06:00 AM - 10:00 PM</p>
+        <p class="contacts-section-working-days">Saturday - Sunday</p>
+        <p class="contacts-section-working-days-time">08:00 AM - 16:00 PM</p>
+        <hr class="contacts-section-hr">
+        <a href="tel:+610383766284" class="contacts-section-link">+61(0) 383 766 284</a>
+        <a href="mailto:noreply@envato.com" class="contacts-section-link">noreply@envato.com</a>
+    </li>
+</ul>
+<div class="contacts-section-button">
+    <button class="secondary-btn" type="button">Our Locations
+        <svg class="secondary-btn-icon">
+            <use href="/sprite.5ec50489.svg#icon-right-arrow"></use>
+        </svg>
+    </button>
+    
+    <button class="primary-btn" type="button">Franchise
+        <svg class="primary-btn-icon">
+            <use href="/sprite.5ec50489.svg#icon-right-arrow"></use>
+        </svg>
+    </button>
+</div>
+</section>
+</div>
+    <div class="footer-background">
+<footer class="footer container">
+    <div class="footer-heading">
+        <p class="footer-heading-made">homemade ice cream made</p>
+        <p class="footer-heading-feature">with passion</p>
+    </div>
+    <ul class="footer-social-list">
+        <li class="footer-social-list-item">
+            <a href="https://github.com/" _blank="" class="footer-social-list-link" target="_blank">
+                <svg class="footer-social-list-icon">
+                    <use href="/sprite.5ec50489.svg#icon-github"></use>
+                </svg>
+            </a></li>
+        <li class="footer-social-list-item">
+            <a href="https://telegram.org/" class="footer-social-list-link" target="_blank">
+                <svg class="footer-social-list-icon">
+                    <use href="/sprite.5ec50489.svg#icon-telegram"></use>
+                </svg>
+            </a></li>
+        <li class="footer-social-list-item">
+            <a href="https://www.facebook.com/" class="footer-social-list-link" target="_blank">
+                <svg class="footer-social-list-icon">
+                    <use href="/sprite.5ec50489.svg#icon-facebook"></use>
+                </svg>
+            </a></li>
+    </ul>
+    <div class="footer-contact">
+        <p class="footer-contact-tell">Feel free to contact</p>
+        <a href="tel:+610383766284" class="footer-contact-tell-link">+61 (0) 383 766 284</a>
+    </div>
+    <div>
+    <p class="footer-rights">&#x000A9; 2019 - IceCream. All Rights Reserved.</p>
+</div>
+</footer>
+</div>
+    
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="/src.e31bb0bc.js"></script>
+    <script src="/menu.0c91648c.js"></script>
+  </body>
+</html>
